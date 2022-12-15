@@ -2,14 +2,21 @@ import java.util.Scanner;
 
 public class ejercicio3 {
   public static void main(String[] args) {
-    // 1) Dadas dos variables numéricas A y B, que el usuario debe teclear, se pide realizar un algoritmo que intercambie los valores de ambas variables y muestre cuanto valen al final las dos variables (recuerda la asignación).
+    // Algoritmo que lea dos números y nos diga cual de ellos es mayor o bien si son iguales (recuerda usar la estructura condicional SI)
     Scanner myObj = new Scanner(System.in);  // Create a Scanner object
-    System.out.println("Enter NUMBER user A");
+    System.out.print("Enter NUMBER user A: ");
     int userNumberA = myObj.nextInt();  // Read user input
 
-    System.out.println("Enter NUMBER user B");
+    System.out.print("Enter NUMBER user B: ");
     int userNumberB = myObj.nextInt();  // Read user input
 
-    System.out.println("Number user A is: " + userNumberB + " Number user B is: "+userNumberA);  // Output user input
+    if (userNumberA>userNumberB){
+      System.out.println("User number A is greater. ");  // Output user input;
+    } 
+    else if(userNumberA<userNumberB){
+      System.out.println("User number B is greater. ");
+    }  else {
+        System.out.println("Both numbers are equals. ");
+      }   
   }
 }
